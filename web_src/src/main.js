@@ -44,9 +44,9 @@ Vue.prototype.$lang = DocConfig.lang // 把语言放进里面，这样组件中�
 /* eslint-disable no-new */
 
 new Vue({
-  el: '#app',
-  router,
-  store,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    router,
+    store,
+    template: '<App/>',
+    components: { App }
 })

@@ -2,16 +2,16 @@
 
 const SOME_MUTATION = 'SOME_MUTATION'
 export default {
-  increment(state, payload) {
-    state.count++
-  },
-  changeItemInfo(state, val) {
-    state.item_info = val
-  },
-  changeOpenCatId(state, val) {
-    state.open_cat_id = val
-  },
-  [SOME_MUTATION](state) {
-    // mutate state
-  }
+    increment (state, payload) {
+        state.count++
+    },
+    changeItemInfo (state, val) {
+        state.item_info = val
+    },
+    changeOpenCatId (state, val) {
+        state.open_cat_id = val
+    },
+    [SOME_MUTATION] (state) {
+        // mutate state
+    }
 }

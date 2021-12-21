@@ -27,133 +27,133 @@ import ItemGroup from '@/components/item/group/Index'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Index',
-      component: Index
-    },
-    {
-      path: '/user/login',
-      name: 'UserLogin',
-      component: UserLogin
-    },
-    {
-      path: '/user/setting',
-      name: 'UserSetting',
-      component: UserSetting
-    },
-    {
-      path: '/user/register',
-      name: 'UserRegister',
-      component: UserRegister
-    },
-    {
-      path: '/user/resetPassword',
-      name: 'UserResetPassword',
-      component: UserResetPassword
-    },
-    {
-      path: '/user/ResetPasswordByUrl',
-      name: 'ResetPasswordByUrl',
-      component: ResetPasswordByUrl
-    },
-    {
-      path: '/item/index',
-      name: 'ItemIndex',
-      component: ItemIndex
-    },
-    {
-      path: '/item/add',
-      name: 'ItemAdd',
-      component: ItemAdd
-    },
-    {
-      path: '/item/password/:item_id',
-      name: 'ItemPassword',
-      component: ItemPassword
-    },
-    {
-      path: '/item/export/:item_id',
-      name: 'ItemExport',
-      component: ItemExport
-    },
-    {
-      path: '/item/setting/:item_id',
-      name: 'ItemSetting',
-      component: ItemSetting
-    },
-    {
-      path: '/page/:page_id',
-      name: 'PageIndex',
-      component: PageIndex
-    },
-    {
-      path: '/p/:unique_key',
-      name: 'PageIndex',
-      component: PageIndex
-    },
-    {
-      path: '/page/edit/:item_id/:page_id',
-      name: 'PageEdit',
-      component: PageEdit
-    },
-    {
-      path: '/page/diff/:page_id/:page_history_id',
-      name: 'PageDiff',
-      component: PageDiff
-    },
-    {
-      path: '/catalog/:item_id',
-      name: 'Catalog',
-      component: Catalog
-    },
-    {
-      path: '/notice/index',
-      name: 'Notice',
-      component: Notice
-    },
-    {
-      path: '/admin/index',
-      name: 'Admin',
-      component: Admin
-    },
-    {
-      path: '/team/index',
-      name: 'Team',
-      component: Team
-    },
-    {
-      path: '/team/member/:team_id',
-      name: 'TeamMember',
-      component: TeamMember
-    },
-    {
-      path: '/team/item/:team_id',
-      name: 'TeamItem',
-      component: TeamItem
-    },
-    {
-      path: '/attachment/index',
-      name: 'Attachment',
-      component: Attachment
-    },
-    {
-      path: '/item/group/index',
-      name: 'ItemGroup',
-      component: ItemGroup
-    },
+    routes: [
+        {
+            path: '/',
+            name: 'Index',
+            component: Index
+        },
+        {
+            path: '/user/login',
+            name: 'UserLogin',
+            component: UserLogin
+        },
+        {
+            path: '/user/setting',
+            name: 'UserSetting',
+            component: UserSetting
+        },
+        {
+            path: '/user/register',
+            name: 'UserRegister',
+            component: UserRegister
+        },
+        {
+            path: '/user/resetPassword',
+            name: 'UserResetPassword',
+            component: UserResetPassword
+        },
+        {
+            path: '/user/ResetPasswordByUrl',
+            name: 'ResetPasswordByUrl',
+            component: ResetPasswordByUrl
+        },
+        {
+            path: '/item/index',
+            name: 'ItemIndex',
+            component: ItemIndex
+        },
+        {
+            path: '/item/add',
+            name: 'ItemAdd',
+            component: ItemAdd
+        },
+        {
+            path: '/item/password/:item_id',
+            name: 'ItemPassword',
+            component: ItemPassword
+        },
+        {
+            path: '/item/export/:item_id',
+            name: 'ItemExport',
+            component: ItemExport
+        },
+        {
+            path: '/item/setting/:item_id',
+            name: 'ItemSetting',
+            component: ItemSetting
+        },
+        {
+            path: '/page/:page_id',
+            name: 'PageIndex',
+            component: PageIndex
+        },
+        {
+            path: '/p/:unique_key',
+            name: 'PageIndex',
+            component: PageIndex
+        },
+        {
+            path: '/page/edit/:item_id/:page_id',
+            name: 'PageEdit',
+            component: PageEdit
+        },
+        {
+            path: '/page/diff/:page_id/:page_history_id',
+            name: 'PageDiff',
+            component: PageDiff
+        },
+        {
+            path: '/catalog/:item_id',
+            name: 'Catalog',
+            component: Catalog
+        },
+        {
+            path: '/notice/index',
+            name: 'Notice',
+            component: Notice
+        },
+        {
+            path: '/admin/index',
+            name: 'Admin',
+            component: Admin
+        },
+        {
+            path: '/team/index',
+            name: 'Team',
+            component: Team
+        },
+        {
+            path: '/team/member/:team_id',
+            name: 'TeamMember',
+            component: TeamMember
+        },
+        {
+            path: '/team/item/:team_id',
+            name: 'TeamItem',
+            component: TeamItem
+        },
+        {
+            path: '/attachment/index',
+            name: 'Attachment',
+            component: Attachment
+        },
+        {
+            path: '/item/group/index',
+            name: 'ItemGroup',
+            component: ItemGroup
+        },
 
-    // -------新路由加在分割线前面---------------
-    {
-      path: '/:item_id',
-      name: 'ItemShow',
-      component: ItemShow
-    },
-    {
-      path: '/:item_id/:page_id(\\d+)',
-      name: 'ItemShow',
-      component: ItemShow
-    }
-  ]
+        // -------新路由加在分割线前面---------------
+        {
+            path: '/:item_id',
+            name: 'ItemShow',
+            component: ItemShow
+        },
+        {
+            path: '/:item_id/:page_id(\\d+)',
+            name: 'ItemShow',
+            component: ItemShow
+        }
+    ]
 })
